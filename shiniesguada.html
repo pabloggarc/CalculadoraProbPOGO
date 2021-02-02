@@ -16,9 +16,9 @@
             
 
             <span>
-                <form action="" method="get">
-                    <label for="pokemon">Elige el Pokémon</label>
-                <select name="pokemon">
+                <form action="http://localhost/servidor/funcionalidad.php"" method="POST">
+                    <label for="pokemon">Elige el Pokémon</label><br>
+                <select name="pokemon" value="pokemon">
                     <option selected disabled=""> </option>
                     <option value=1>Bulbasaur</option>
                     <option value=4>Charmander</option>
@@ -98,13 +98,13 @@
                     <option value=632>Durant</option>
                 </select>
                 <br>
-                    <label for="avistamientos">Introduce el número de veces que has pulsado este Pokémon</label>
-                    <input type="text" placeholder="p. ej: 782" id="avisamientos" required>
+                    Introduce el número de veces que has pulsado este Pokémon<br>
+					<input type="number" value="n" placeholder="Pj: 2000">
                     <br>
-                    <label for="shinies">Introduce el número de shinies</label>
-                    <input type="text" placeholder="p. ej: 2" id="shinies" required>
+					Introduce el número de shinies
                     <br>
-                    <input type="submit">
+                    <input type="number" value="k" placeholder="p. ej: 2"><br><br>
+                    <input type="submit" value="Comprobar">
                 </form>
             </span>  
         </div>
