@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>CALCULADORA POGO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+            <a href="http://shiniescalc.byethost3.com/main.html">
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg);">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url(images/logo.jpg);"></div>
+	  				<h3>Calculadora Pokémon GO</h3>
+                      <h3>(BETA)</h3>
+	  			</div>
+            </a>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li>
+            <a href="main.html"><span class="fa fa-home mr-3"></span>Principal</a>
+          </li>
+          <li class="active">
+              <a href="funcionamiento.html"><span class="fa fa-calculator mr-3 notif"></span>¿Cómo funciona?</a>
+          </li>
+          <li>
+            <a href="acerca.html"><span class="fa fa-info-circle mr-3"></span>Acerca de...</a>
+          </li>
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">DISTRIBUCIÓN BINOMIAL</h2>
+        <span><div>A la hora de crear esta herramienta me he basado en la distribución binomial, "versión extendida" de la distribución de Bernoulli. </div></span><br>
+        <img src="https://phhp-faculty-cantrell.sites.medinfo.ufl.edu/files/2013/02/mod8-binomform.png"><br><br>
+        <span><div>Por ahora solo es capaz de calcular la probabilidad de que en n intentos, hayas obtenido x shinies. ¡CUIDADO!, que aumentes la cantidad de intentos no aumenta la probabilidad de que hayas sacado uno, de hecho la disminuye, ya que sería más probable haber sacado más de uno, pero para esto necesitaríamos usar la distribución Normal, que quizá implementemos en un futuro. </div></span><br>
+        <span><div>Los datos de "p" dependen del Pokémon y cada cierto tiempo los actualizamos desde<a href="https://shinyrates.com/" target="_blank"> aquí</div></span></a href><br>
+        <span><div>Adjuntamos un vídeo para entender de forma más clara como funciona el sistema</div></span><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f0h4ldtbgiw?start=142" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

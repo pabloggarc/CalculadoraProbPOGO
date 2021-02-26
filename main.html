@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>CALCULADORA POGO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	        </button>
+        </div>
+            <a href="http://shiniescalc.byethost3.com/main.html">
+	  		<div class="img bg-wrap text-center py-4" style="background-image: url(images/bg_1.jpg);">
+	  			<div class="user-logo">
+	  				<div class="img" style="background-image: url(images/logo.jpg);"></div>
+	  				<h3>Calculadora Pokémon GO</h3>
+                    <h3>(BETA)</h3>
+	  			</div>
+            </a>
+	  		</div>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="main.html"><span class="fa fa-home mr-3"></span>Principal</a>
+          </li>
+          <li>
+              <a href="funcionamiento.html"><span class="fa fa-calculator mr-3 notif"></span>¿Cómo funciona?</a>
+          </li>
+          <li>
+            <a href="acerca.html"><span class="fa fa-info-circle mr-3"></span>Acerca de...</a>
+          </li>
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">CALCULAR PROBABILIDADES</h2>
+        <span>
+          <form action="funcionalidad.php" method="POST">
+              <label for="pokemon">Elige el Pokémon</label><br>
+          <select name="pokemon" value="pokemon">
+              <option selected disabled=""> </option>
+              <option value=0>Legendario(RAID)</option>
+              <option value=-1>Community Day</option>
+              <option value=1>Bulbasaur</option>
+              <option value=4>Charmander</option>
+              <option value=7>Squirtle</option>
+              <option value=10>Caterpie</option>
+              <option value=13>Weedle</option>
+              <option value=15>Beedrill</option>
+              <option value=16>Pidgey</option>
+              <option value=18>Pidgeot</option>
+              <option value=19>Rattata</option>
+              <option value=21>Spearow</option>
+              <option value=23>Ekans</option>
+              <option value=25>Pikachu</option>
+              <option value=26>Raichu(Alola)</option>
+              <option value=27>Sandshrew</option>
+              <option value=29>Nidoran♀</option>
+              <option value=32>Nidoran♂</option>
+              <option value=35>Clefairy</option>
+              <option value=37>Vulpix</option>
+              <option value=39>Jigglypuff</option>
+              <option value=41>Zubat</option>
+              <option value=43>Oddish</option>
+              <option value=46>Paras</option>
+              <option value=48>Venonat</option>
+              <option value=50>Diglett</option>
+              <option value=52>Meowth</option>
+              <option value=54>Psyduck</option>
+              <option value=56>Mankey</option>
+              <option value=58>Growlithe</option>
+              <option value=60>Poliwag</option>
+              <option value=63>Abra</option>
+              <option value=66>Machop</option>
+              <option value=69>Bellsprout</option>
+              <option value=72>Tentacool</option>
+              <option value=74>Geodude</option>
+              <option value=77>Ponyta</option>
+              <option value=79>Slowpoke</option>
+              <option value=81>Magnemite</option>
+              <option value=83>Farfetch'd</option>
+              <option value=84>Doduo</option>
+              <option value=86>Seel</option>
+              <option value=88>Grimer</option>
+              <option value=90>Shellder</option>
+              <option value=92>Gastly</option>
+              <option value=95>Onix</option>
+              <option value=96>Drowzee</option>
+              <option value=98>Krabby</option>
+              <option value=100>Voltorb</option>
+              <option value=102>Exeggute</option>
+              <option value=104>Cubone</option>
+              <option value=106>Hitmonlee</option>
+              <option value=107>Hitmonchan</option>
+              <option value=108>Lickitung</option>
+              <option value=109>Koffing</option>
+              <option value=111>Rhyhorn</option>
+              <option value=113>Chansey</option>
+              <option value=114>Tangela</option>
+              <option value=115>Kangaskhan</option>
+              <option value=116>Horsea</option>
+              <option value=118>Goldeen</option>
+              <option value=120>Staryu</option>
+              <option value=122>Mr. Mime</option>
+              <option value=123>Scyther</option>
+              <option value=124>Jynx</option>
+              <option value=125>Electabuzz</option>
+              <option value=127>Pinsir</option>
+              <option value=128>Tauros</option>
+              <option value=129>Magikarp</option>
+              <option value=131>Lapras</option>
+              <option value=133>Eevee</option>
+              <option value=137>Porygon</option>
+              <option value=138>Omanyte</option>
+              <option value=140>Kabuto</option>
+              <option value=142>Aerodactyl</option>
+              <option value=143 disabled>Snorlax</option>
+              <option value=147>Dratini</option>
+              <option value=152>Chikorita</option>
+              <option value=155>Cyndaquil</option>
+              <option value=158>Totodile</option>
+              <option value=161>Sentret</option>
+              <option value=165>Ledyba</option>
+              <option value=170>Chinchou</option>
+              <option value=177>Natu</option>
+              <option value=179>Mareep</option>
+              <option value=183>Marill</option>
+              <option value=185>Sudowoodo</option>
+              <option value=190>Aipom</option>
+              <option value=191>Sunkern</option>
+              <option value=193>Yanma</option>
+              <option value=194>Wooper</option>
+              <option value=198>Murkrow</option>
+              <option value=200>Misdreavus</option>
+              <option value=201 disabled>Unown</option>
+              <option value=202>Wobbuffet</option>
+              <option value=204>Pineco</option>
+              <option value=206>Dunsparce</option>
+              <option value=207>Gligar</option>
+              <option value=209>Snubbull</option>
+              <option value=211>Qwilfish</option>
+              <option value=213>Shuckle</option>
+              <option value=215>Sneasel</option>
+              <option value=216>Teddiursa</option>
+              <option value=220>Swinub</option>
+              <option value=225 disabled>Delibird</option>
+              <option value=227>Skarmory</option>
+              <option value=228>Skarmory</option>
+              <option value=234>Stantler</option>
+              <option value=241>Miltank</option>
+              <option value=246>Larvitar</option>
+              <option value=252>Treecko</option>
+              <option value=255>Torchic</option>
+              <option value=258>Mudkip</option>
+              <option value=261>Poochyena</option>
+              <option value=263>Zigzagoon</option>
+              <option value=265>Wurmple</option>
+              <option value=270>Lotad</option>
+              <option value=273>Seedot</option>
+              <option value=276>Taillow</option>
+              <option value=278>Wingull</option>
+              <option value=280>Ralts</option>
+              <option value=287>Slakoth</option>
+              <option value=290>Nincada</option>
+              <option value=296>Makuhita</option>
+              <option value=300>Skitty</option>
+              <option value=302>Sableye</option>
+              <option value=303>Mawile</option>
+              <option value=304>Aron</option>
+              <option value=307>Meditite</option>
+              <option value=309>Electrike</option>
+              <option value=311>Plusle</option>
+              <option value=312>Minun</option>
+              <option value=313>Volbeat</option>
+              <option value=314>Illumise</option>
+              <option value=315>Roselia</option>
+              <option value=318>Carvanha</option>
+              <option value=320>Wailmer</option>
+              <option value=325>Spoink</option>
+              <option value=327>Spinda</option>
+              <option value=333>Swablu</option>
+              <option value=335>Zangoose</option>
+              <option value=336>Seviper</option>
+              <option value=337>Lunatone</option>
+              <option value=338>Solrock</option>
+              <option value=339>Barboach</option>
+              <option value=343>Baltoy</option>
+              <option value=345>Lileep</option>
+              <option value=347>Anorith</option>
+              <option value=349>Feebas</option>
+              <option value=351>Castform</option>
+              <option value=353>Shuppet</option>
+              <option value=355>Shuppet</option>
+              <option value=359>Absol</option>
+              <option value=361>Snorunt</option>
+              <option value=366>Clamperl</option>
+              <option value=370>Luvdisc</option>
+              <option value=371>Bagon</option>
+              <option value=374>Beldum</option>
+              <option value=387>Turtwig</option>
+              <option value=390>Chimhcar</option>
+              <option value=393>Piplup</option>
+              <option value=401>Kricketot</option>
+              <option value=403>Shinx</option>
+              <option value=412>Burmy</option>
+              <option value=418>Buizel</option>
+              <option value=425>Drifool</option>
+              <option value=427>Buneary</option>
+              <option value=431>Glameow</option>
+              <option value=436>Bronzor</option>
+              <option value=442 disabled>Spiritomb</option>
+              <option value=443>Gible</option>
+              <option value=449>Hippopotas</option>
+              <option value=451>Skorupi</option>
+              <option value=453>Croagunk</option>
+              <option value=459>Snover</option>
+              <option value=495>Snivy</option>
+              <option value=504>Patrat</option>
+              <option value=506>Lillipup</option>
+              <option value=519>Pidove</option>
+              <option value=524>Roggenrola</option>
+              <option value=527>Woobat</option>
+              <option value=532>Timburr</option>
+              <option value=557>Dwebble</option>
+              <option value=562 disabled>Yamask</option>
+              <option value=572>Minccino</option>
+              <option value=594>Alomomola</option>
+              <option value=597>Ferroseed</option>
+              <option value=599>Klink</option>
+              <option value=613>Cubchoo</option>
+              <option value=627>Rufflet</option>
+              <option value=631>Heatmor</option>
+              <option value=632>Durant</option>
+              <option value=633>Deino</option>
+              <option value=808 disabled>Meltan</option>
+          </select>
+          <br><br>
+              Introduce el número de veces que has pulsado este Pokémon<br>
+              <input type="number" name="n" value="" placeholder="p. ej: 1500">
+          <br><br>
+              Introduce el número de shinies<br>
+              <input type="number" name="k" value="" placeholder="p. ej: 2"><br><br>
+              <input type="submit" value="Calcular probabilidad">
+
+        </form>
+      </span>
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
